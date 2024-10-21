@@ -7,15 +7,17 @@ import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import ErrorPage from './components/ErrorPage'; 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/about",
-    element: <About />
+    element: <About />,
   },
   {
     path: "/projects",
